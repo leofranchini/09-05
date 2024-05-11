@@ -69,6 +69,10 @@ footer {
     
 }
 
+.section1{
+    white-space: pre-wrap;
+}
+
 .section2{
     margin-bottom: 50px;
 }
