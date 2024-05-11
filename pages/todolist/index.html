@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <header>
+        <h1>Todo List</h1>
+    </header>
+
+    <main>
+        <form name="listatarefas" id="lista-form">
+            <input type="text"
+                   name="tarefa" 
+                   id="tarefa"
+                   placeholder="Informe o título da tarefa"
+                   required>
+
+            <input type="text" 
+                   name="descricao" 
+                   id="descricao" 
+                   placeholder="Informe a descrição da tarefa"
+                   required>
+
+            <button type="submit" onclick="salvar()">Salvar Tarefa</button>
+        </form>
+
+        <section class="section1">
+            <h1><span id="task"></span></h1>
+            <p><span id="description"></span></p>
+        </section>
+
+        <section class="section2">
+            <h1>Fazer a atividade prática</h1>
+            <p>1. Adicionar um novo link na nav da página principal, que irá direcionar para uma página de TODO.</p>
+
+            <p>2. Criar a nova página de TODO, utilizando grid, onde as rows da grid serão para o header, main e footer.</p>
+                
+            <p>3. Na main da nova página, utilizar um form que terá um input de texto para o título da tarefa, um textarea para a descrição da tarefa, e um botão para enviar os dados do formulário.</p>
+                
+            <p>4. Ao clicar no botão de enviar, adicionar esse texto à uma lista do localStorage.</p>
+                
+            <p>5. Mostrar todos os itens do localStorage na página. Se recarregar a página, deve apresentar os itens já salvos.<br>
+                
+            <p>6. Limpar os inputs após salvar.</p>
+                
+            <p>Para estilizar o placeholder, utilizar o pseudo elemento ::placeholder</p>
+                
+            <p>Para exibir as quebras de linha no parágrafo de descrição, utilizar o estilo white-space: pre-wrap;</p>
+        
+        </section>
+    </main>
+
+    <footer>
+        <p>©2024 Todo List</p>
+        <p></p>
+    </footer>
+    <script src="./index.js"></script>
+</body>
+</html>
